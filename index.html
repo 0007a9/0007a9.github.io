@@ -1,44 +1,142 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>0007a9</title>
-<style>
-body{
-    font-family:Arial,sans-serif;
-    max-width:700px;
-    margin:60px auto;
-    text-align:center;
-    background:#f8f8f8;
-}
-a{
-    display:block;
-    margin:18px;
-    padding:16px;
-    background:#0007A9;
-    color:white;
-    text-decoration:none;
-    border-radius:10px;
-    font-size:20px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0007a9</title>
+
+    <style>
+
+        body{
+            margin:0;
+            font-family:Arial, Helvetica, sans-serif;
+            background:white;
+            text-align:center;
+        }
+
+        .construction{
+            margin:30px 0;
+            letter-spacing:4px;
+            font-size:22px;
+        }
+
+        .card{
+
+            display:block;
+
+            width:90%;
+            max-width:900px;
+
+            margin:35px auto;
+
+            background:#0007A9;
+
+            color:white;
+
+            text-decoration:none;
+
+            border-radius:18px;
+
+            padding:30px 20px;
+
+            box-sizing:border-box;
+
+        }
+
+        .title{
+
+            font-size:64px;
+            margin-bottom:15px;
+
+        }
+
+        .subtitle{
+
+            font-size:20px;
+            opacity:.90;
+
+        }
+
+        .card:hover{
+
+            filter:brightness(115%);
+
+        }
+
+        @media (max-width:700px){
+
+            .title{
+                font-size:42px;
+            }
+
+            .subtitle{
+                font-size:17px;
+            }
+
+        }
+
+    </style>
+
 </head>
 
 <body>
 
-<h1>H ey David</h1>
+<div class="construction">
+&lt;&lt;&lt;under_construction.&gt;&gt;&gt;
+</div>
 
-<p>>>>under construction<<<.</p>
 
-<a href="#">What's going on? => FindPenguins</a>
+<a class="card" href="#">
 
-<a href="#">Where am I vs. planned 2 be? => Routing</a>
+    <div class="title">
+        H ey David
+    </div>
 
-<a href="#">Base Info's - KISS</a>
+    <div class="subtitle">
+        FLHPI • Story • Specs • To Do's
+    </div>
 
-<a href="#">FLHPI Specs - Pur'n'Kleen</a>
+</a>
 
-<a href="pages/faq/">What the FAQ!</a>
-    
+
+<a class="card" href="#">
+
+    <div class="title">
+        Roaming
+    </div>
+
+    <div class="subtitle">
+        FindPenguins • Kurviger • Waypoints • Documents
+    </div>
+
+</a>
+
+
+<a class="card" href="#">
+
+    <div class="title">
+        What the FAQ!
+    </div>
+
+    <div class="subtitle">
+        5 W's • 0007A9 • Kilroy • Why?
+    </div>
+
+</a>
+
+
+<a class="card" href="#">
+
+    <div class="title">
+        Pur'n'Kleen
+    </div>
+
+    <div class="subtitle">
+        Maintenance • Torque • Tire Pressure • Oil • Parts
+    </div>
+
+</a>
+
 </body>
 </html>
