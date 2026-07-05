@@ -10,6 +10,10 @@
 
 <style>
 
+*{
+    box-sizing:border-box;
+}
+
 body{
 
     margin:0;
@@ -35,25 +39,26 @@ body{
     background:
     repeating-linear-gradient(
         -45deg,
-        #ffd400 0px,
-        #ffd400 18px,
+        #FFD400 0px,
+        #FFD400 18px,
         #222222 18px,
         #222222 36px
     );
 
-    box-shadow:3px 0 12px rgba(0,0,0,.35);
+    box-shadow:4px 0 12px rgba(0,0,0,.35);
 
 }
 
-/* gesamte Karte */
+/* Inhalt */
 
 .wrapper{
 
-    max-width:900px;
+    max-width:950px;
 
-    margin:80px auto;
+    margin:50px auto;
 
-    padding-left:60px;
+    padding-left:70px;
+    padding-right:25px;
 
 }
 
@@ -63,65 +68,99 @@ body{
 
     display:block;
 
+    text-decoration:none;
+
     background:#0007A9;
 
     color:white;
 
-    text-decoration:none;
+    border-radius:26px;
 
-    border-radius:24px;
+    padding:42px;
 
-    padding:45px 40px;
+    margin-bottom:38px;
 
     text-align:center;
 
-    box-shadow:0 10px 28px rgba(0,0,0,.45);
+    box-shadow:0 10px 24px rgba(0,0,0,.40);
 
-}
-
-/* Titel */
-
-.card h1{
-
-    margin:0;
-
-    font-size:72px;
-
-    font-weight:300;
-
-}
-
-/* Trennlinie */
-
-.separator{
-
-    width:65%;
-
-    margin:28px auto;
-
-    height:1px;
-
-    background:rgba(255,255,255,.30);
-
-}
-
-/* Untertitel */
-
-.card p{
-
-    margin:0;
-
-    font-size:22px;
-
-    color:#eeeeee;
+    transition:.2s;
 
 }
 
 .card:hover{
 
-    transform:translateY(-2px);
+    transform:translateY(-3px);
 
-    transition:.2s;
+    box-shadow:0 16px 32px rgba(0,0,0,.50);
+
+}
+
+.card h1{
+
+    margin:0;
+
+    font-weight:300;
+
+    font-size:clamp(48px,8vw,74px);
+
+    white-space:nowrap;
+
+}
+
+.separator{
+
+    width:62%;
+
+    height:1px;
+
+    margin:24px auto;
+
+    background:rgba(255,255,255,.28);
+
+}
+
+.card p{
+
+    margin:0;
+
+    color:#efefef;
+
+    font-size:clamp(16px,2.4vw,22px);
+
+}
+
+/* Handy */
+
+@media (max-width:700px){
+
+.wrapper{
+
+    margin:30px auto;
+
+    padding-left:48px;
+
+    padding-right:16px;
+
+}
+
+.warning{
+
+    width:30px;
+
+}
+
+.card{
+
+    padding:34px 22px;
+
+}
+
+.separator{
+
+    width:55%;
+
+}
 
 }
 
@@ -145,8 +184,37 @@ body{
 
 </a>
 
+<a class="card" href="roaming.html">
+
+<h1>Roaming</h1>
+
+<div class="separator"></div>
+
+<p>FindPenguins • Kurviger • Waypoints</p>
+
+</a>
+
+<a class="card" href="roaming.html">
+
+<h1>What the FAQ!</h1>
+
+<div class="separator"></div>
+
+<p>5 W's • 0007A9 • Kilroy</p>
+
+</a>
+
+<a class="card" href="roaming.html">
+
+<h1>Pur'n'Kleen</h1>
+
+<div class="separator"></div>
+
+<p>Maintenance • Torque • Oil</p>
+
+</a>
+
 </div>
 
 </body>
-
 </html>
