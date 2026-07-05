@@ -33,13 +33,15 @@ body{
     left:64px;
     top:50%;
 
-    transform:translateY(-50%);
+    transform: translateY(-50%) rotate(180deg);
 
-    writing-mode:vertical-rl;
+    writing-mode:vertical-rl ;
+    
+    white-space: nowrap;
 
     color:#cfc8b8;
 
-    font-size:14px;
+    font-size:78px;
 
     letter-spacing:4px;
 
@@ -93,7 +95,7 @@ body{
 
     background:#0007A9;
 
-    color:white;
+    color:#cfc8b8;
 
     border-radius:26px;
 
@@ -145,7 +147,7 @@ body{
 
     margin:0;
 
-    color:#efefef;
+    color:#cfc8b8;
 
     font-size:clamp(16px,2.4vw,22px);
 
@@ -185,6 +187,30 @@ body{
 
 }
 
+...
+
+.field{
+    ...
+}
+
+.partnumber{
+
+    position:fixed;
+
+    right:18px;
+    bottom:12px;
+
+    color:#cfc8b8;
+
+    font-size:12px;
+
+    letter-spacing:1px;
+
+    opacity:0.75;
+
+}
+
+
 </style>
 
 </head>
@@ -195,8 +221,8 @@ body{
 
 <div class="field">
 
-FIELD<br>
-COMPENDIUM
+FIELD COMPENDIUM
+
 
 </div>    
 
@@ -242,6 +268,10 @@ COMPENDIUM
 
 </a>
 
+</div>
+
+<div class="partnumber">
+    P/N coyote_pl.b_061.0311
 </div>
 
 </body>
